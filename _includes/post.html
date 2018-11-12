@@ -4,13 +4,13 @@
   </div>
   <div id="post-info">
     <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/{{ page.cover }}">
+      <img id="cover-photo" src="{{ site.url }}/images/{{ page.cover }}">
     </div>
     <div id="info-container">
       <h1 id="title">{{ page.title }}</h1>
-<!--      {% if page.date %}-->
-<!--        <span id="date">{{ page.date | date_to_string }}</span>-->
-<!--      {% endif %}-->
+      <!--{% if page.date %}-->
+      <!--  <span id="date">{{ page.date | date_to_string }}</span>-->
+      <!--{% endif %}-->
     </div>
   </div>
 
@@ -22,7 +22,6 @@
       {% if page.date %}
         <span id="pub-date">Updated on {{ page.date | date_to_string }}</span> <span class="separator">&bull;</span>
       {% endif %}
-      <!-- <span id="social">Find me on <a href="">Twitter</a>!</span> -->
     </p>
   </div>
 </div>
